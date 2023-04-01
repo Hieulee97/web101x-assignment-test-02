@@ -1,0 +1,24 @@
+section > .container {
+  width: 1170px;
+  margin: auto;
+  display: block;
+
+  padding: 30px 50px;
+}
+
+.banner-img {
+  width: 100%;
+  height: auto;
+  filter: contrast(0.7);
+}
+
+.banner-title {
+  top: 100px;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#nav-bar {
+  text-align: center;
+}

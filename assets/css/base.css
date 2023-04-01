@@ -1,0 +1,40 @@
+:root {
+  --color-white: #fff;
+}
+
+/* html {
+  font-size: 62.5%;
+  line-height: 1.5rem;
+  scroll-behavior: smooth;
+  -webkit-scroll-behavior: smooth;
+} */
+
+/* Text Style Class */
+
+.heading-1 {
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 4rem;
+}
+
+/* Color Class */
+
+.text-white {
+  color: var(--color-white);
+}
+
+/* Backgournd Color Class*/
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+/* Postion Class */
+
+.pos-rel {
+  position: relative;
+}
+
+.pos-abs {
+  position: absolute;
+}
