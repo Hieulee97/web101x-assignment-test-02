@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/base.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -18,33 +24,55 @@
     <title>Assignment 02</title>
   </head>
   <body>
+    <!-- Begin: Banner -->
     <div id="banner">
       <img
         src="assets/images/banner.jpg"
         alt="Avatar Image"
         width="1600"
         height="759"
-        class="banner-img pos-rel"
+        class="banner-img d-block pos-rel"
       />
       <div class="banner-title pos-abs text-white">
-        <h1 class="heading-1">Nguyễn Văn A</h1>
-        <span>Full Stack Developer</span>
+        <h2 class="heading-1">Le Trung Hieu</h2>
+        <span class="text-thin-1">Full Stack Developer</span>
       </div>
     </div>
-
-    <section id="nav-bar">
-      <nav class="container">
-        <a href="#">Thông tin</a>
-        <a href="#">Lý lịch</a>
-        <a href="#">Chứng chỉ</a>
-        <a href="#">Dự Án</a>
+    <!-- End: Banner -->
+    <!-- Bengin: navbar-->
+    <section id="nav-bar" class="border-thin-gray">
+      <nav class="container navbar d-flex flex-row flex-center-perfect">
+        <div class="navbar-item ptb-16 plr-20">
+          <a href="#" class="text-link-1 text-1 text-content"
+            ><i class="icon-user text-blue"></i>Thông tin</a
+          >
+        </div>
+        <div class="navbar-item ptb-16 plr-20">
+          <a href="#" class="text-link-1 text-1 text-content"
+            ><i class="icon-doc-text-inv text-blue"></i>Lý lịch</a
+          >
+        </div>
+        <div class="navbar-item plr-40">
+          <p class="heading-2">Lê Trung Hiếu</p>
+          <span class="text-1">Full Stack Developer</span>
+        </div>
+        <div class="navbar-item ptb-16 plr-20">
+          <a href="#" class="text-link-1 text-1 text-content"
+            ><i class="icon-mail-alt text-blue"></i>Chứng chỉ</a
+          >
+        </div>
+        <div class="navbar-item ptb-16 plr-20">
+          <a href="#" class="text-link-1 text-1 text-content"
+            ><i class="icon-star-1 text-blue"></i>Dự Án</a
+          >
+        </div>
       </nav>
     </section>
 
     <section id="about" class="bg-grey">
-      <div class="container">
-        <div id="target">
-          <h1 class="section-title">Mục tiêu nghề nghiệp</h1>
+      <div class="grid-col-2">
+        <div id="target" class="text-2 plr-40 ptb-24 bg-light-gray">
+          <h1 class="section-title ptb-16">Mục tiêu nghề nghiệp</h1>
           <p>
             Là một sinh viên đã hoàn thành chương trình chứng chỉ Doanh Nghiệp
             của FUNiX. Em mong muốn mình sẽ được làm việc với vị trí
@@ -53,16 +81,31 @@
             hoàn thành tốt nhất công việc được giao.
           </p>
         </div>
-        <div id="personal-info" style="margin-top: 20px">
-          <h1 class="section-title">Thông tin cá nhân</h1>
-          <ul class="mt-40 info">
-            <li><span>Giới tính</span> : Nam</li>
-            <li><span>Ngày sinh</span> : 19/05/2000</li>
-            <li><span>Điện thoại</span> : (+84) 912398xxx</li>
-            <li><span>Email</span> : sinhvien@funix.edu.vn</li>
-            <li><span>Địa chỉ</span> : Số 10, đường 10, Hà Nội</li>
-            <li><span>Website</span> : https://abc.tech</li>
+        <div id="personal-info" class="plr-40 ptb-24 bg-brown-gray">
+          <h1 class="section-title ptb-16">Thông tin cá nhân</h1>
+          <ul class="info list-style-none">
+            <li class="text-2"><span>Giới tính</span> : Nam</li>
+            <li class="text-2"><span>Ngày sinh</span> : 21/01/1997</li>
+            <li class="text-2"><span>Điện thoại</span> : (+84) 703558982</li>
+            <li class="text-2"><span>Email</span> : sinhvien@funix.edu.vn</li>
+            <li class="text-2">
+              <span>Địa chỉ</span> : Số 10, đường 10, Hà Nội
+            </li>
+            <li class="text-2">
+              <span>Website</span> : https://github.com/Hieulee97
+            </li>
           </ul>
+          <p class="text-2 mt-40">
+            <a href="#" class="text-link-1"
+              ><i class="icon-twitter text-blue"></i></a
+            ><a href="#" class="text-link-1"
+              ><i class="icon-facebook text-blue"></i></a
+            ><a href="#" class="text-link-1"
+              ><i class="icon-gplus text-blue"></i></a
+            ><a href="#" class="text-link-1">
+              <i class="icon-linkedin text-blue"></i>
+            </a>
+          </p>
         </div>
       </div>
     </section>
