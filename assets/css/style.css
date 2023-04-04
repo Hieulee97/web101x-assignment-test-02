@@ -37,3 +37,26 @@ section#nav-bar nav.container {
 .container .navbar-item:nth-child(3) {
   border: none;
 }
+
+/* Job Info Style */
+
+.jobs-info-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "job-title job-title job-img"
+    "job-desc job-desc job-desc";
+}
+
+.job-title {
+  grid-area: job-title;
+}
+
+.job-img {
+  grid-area: job-img;
+}
+
+.job-desc {
+  grid-area: job-desc;
+}
