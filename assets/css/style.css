@@ -1,5 +1,5 @@
 section > .container {
-  width: 1170px;
+  width: 1270px;
   margin: auto;
   /* display: block; */
 
@@ -40,13 +40,21 @@ section#nav-bar nav.container {
 
 /* Job Info Style */
 
+.work-status {
+  color: var(--color-white);
+  border-radius: 7px;
+  background-color: var(--color-text-blue);
+  font-style: italic;
+  padding: 2px 5px 2px 5px;
+}
+
 .jobs-info-details {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
+  grid-template-rows: 100px auto;
   grid-template-areas:
-    "job-title job-title job-img"
-    "job-desc job-desc job-desc";
+    "job-title job-title job-title job-img"
+    "job-desc job-desc job-desc job-desc";
 }
 
 .job-title {
@@ -59,4 +67,26 @@ section#nav-bar nav.container {
 
 .job-desc {
   grid-area: job-desc;
+}
+
+/* Hobby Style */
+
+.hobby-img {
+  height: 56px;
+  width: 56px;
+  border-radius: 999px;
+  border: 2px solid var(--color-text-blue);
+}
+
+/* Skill Style */
+
+.skill-point {
+  border-radius: 999px;
+  background-color: var(--color-text-blue);
+  height: 3px;
+  width: 50px;
+}
+
+.skill-point.point-none {
+  background-color: var(--color-ligt-gray);
 }

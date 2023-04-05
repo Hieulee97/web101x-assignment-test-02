@@ -27,9 +27,19 @@ html {
 
 /* Flex Layout Class */
 
+.flex-col {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
 .flex-row {
   flex-wrap: wrap;
   flex-direction: row;
+}
+
+.flex-hoz-center {
+  align-items: center;
 }
 
 .flex-center-perfect {
@@ -48,6 +58,11 @@ html {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+
+.gap-10 {
+  gap: 10px;
+}
+
 .gap-20 {
   gap: 20px;
 }
@@ -58,6 +73,11 @@ html {
 }
 
 /* Paddign Style Class */
+
+.plr-40-10 {
+  padding-right: 10px;
+  padding-left: 40px;
+}
 
 .plr-20 {
   padding-right: 20px;
@@ -74,9 +94,26 @@ html {
   padding-bottom: 16px;
 }
 
+.ptb-16-60 {
+  padding-top: 16px;
+  padding-bottom: 60px;
+}
+
+.pb-60 {
+  padding-bottom: 60px;
+}
+
 .ptb-24 {
   padding-top: 24px;
   padding-bottom: 24px;
+}
+
+.pt-8 {
+  padding-top: 8px;
+}
+
+.pt-20 {
+  padding-top: 20px;
 }
 
 .pt-40 {
@@ -115,16 +152,17 @@ ul.list-dashed > li:before {
 
 ul.list-disc-blue {
   list-style: none; /* Remove default bullets */
+  position: relative;
 }
 
 ul.list-disc-blue > li::before {
-  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: var(--color-text-blue); /* Change the color */
-
-  font-weight: 700; /* If you want it to be bold */
-  font-size: 2rem;
+  content: ""; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  background-color: var(--color-text-blue); /* Change the color */
+  border: 3px solid whitesmoke;
   display: inline-block; /* Needed to add space between the bullet and the text */
-  width: 1rem; /* Also needed for space (tweak if needed) */
+  width: 14px; /* Also needed for space (tweak if needed) */
+  height: 14px;
+  border-radius: 999px;
   margin-left: -1rem; /* Also needed for space (tweak if needed) */
 }
 
@@ -176,6 +214,10 @@ ul.list-disc-blue > li::before {
   line-height: 1.5rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
 /* Color Class */
 
 .text-white {
@@ -211,6 +253,11 @@ ul.list-disc-blue > li::before {
 
 .pos-abs {
   position: absolute;
+}
+
+.pos-vec-center {
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /* Image Class */
