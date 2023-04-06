@@ -101,3 +101,26 @@ section#nav-bar nav.container {
 .cert-img > img.d-block {
   width: 100%;
 }
+
+/* Project Style */
+
+.project-img {
+  width: 100%;
+}
+
+.project-img > img.d-block {
+  width: 100%;
+}
+
+.project-date {
+  color: var(--color-white);
+  border-radius: 999px;
+  background-color: var(--color-text-blue);
+  padding: 5px 10px 5px 10px;
+}
+
+.project-details-table {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 125px 1fr auto;
+}
