@@ -90,3 +90,14 @@ section#nav-bar nav.container {
 .skill-point.point-none {
   background-color: var(--color-ligt-gray);
 }
+
+/* Certificate Style */
+
+.cert-img {
+  width: 100%;
+  padding-left: 16px;
+}
+
+.cert-img > img.d-block {
+  width: 100%;
+}

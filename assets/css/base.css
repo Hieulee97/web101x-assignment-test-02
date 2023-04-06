@@ -1,4 +1,5 @@
 :root {
+  --color-primary: #eb8426;
   --color-white: #fff;
   --color-black: #000;
   --font-global: "Roboto", sans-serif;
@@ -59,6 +60,10 @@ html {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.gap-col-20 {
+  column-gap: 20px;
+}
+
 .gap-10 {
   gap: 10px;
 }
@@ -72,11 +77,29 @@ html {
   border: 1px solid var(--color-gray);
 }
 
+.border-bot-primary {
+  border-bottom: 1px solid var(--color-primary);
+}
+
+.border-left-primary {
+  border-left: 1px solid var(--color-primary);
+}
+
 /* Paddign Style Class */
+
+.plr-20-10 {
+  padding-right: 10px;
+  padding-left: 20px;
+}
 
 .plr-40-10 {
   padding-right: 10px;
   padding-left: 40px;
+}
+
+.plr-48-10 {
+  padding-right: 10px;
+  padding-left: 48px;
 }
 
 .plr-20 {
@@ -97,6 +120,14 @@ html {
 .ptb-16-60 {
   padding-top: 16px;
   padding-bottom: 60px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+.pb-40 {
+  padding-bottom: 40px;
 }
 
 .pb-60 {
@@ -120,6 +151,13 @@ html {
   padding-top: 40px;
 }
 
+.pl-8 {
+  padding-left: 8px;
+}
+
+.pl-20 {
+  padding-left: 20px;
+}
 /* Margin Style Class */
 
 .mt-40 {
@@ -163,7 +201,7 @@ ul.list-disc-blue > li::before {
   width: 14px; /* Also needed for space (tweak if needed) */
   height: 14px;
   border-radius: 999px;
-  margin-left: -1rem; /* Also needed for space (tweak if needed) */
+  margin-left: -1.5rem; /* Also needed for space (tweak if needed) */
 }
 
 /* Text Style Class */
@@ -192,6 +230,12 @@ ul.list-disc-blue > li::before {
   line-height: 1.25rem;
 }
 
+.heading-5 {
+  font-weight: 500;
+  font-size: 0.85rem;
+  line-height: 1.25rem;
+}
+
 .text-1 {
   font-weight: 400;
   font-size: 0.75rem;
@@ -201,6 +245,12 @@ ul.list-disc-blue > li::before {
 .text-2 {
   font-weight: 400;
   font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-3 {
+  font-weight: 400;
+  font-size: 0.8rem;
   line-height: 1.5rem;
 }
 
@@ -216,6 +266,10 @@ ul.list-disc-blue > li::before {
 
 .text-center {
   text-align: center;
+}
+
+.text-upper {
+  text-transform: uppercase;
 }
 
 /* Color Class */
