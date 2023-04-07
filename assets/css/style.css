@@ -30,12 +30,20 @@ section#nav-bar nav.container {
 
 .container .navbar-item {
   min-width: 150px;
+  height: 100%;
   border-left: 1px solid var(--color-gray);
   border-right: 1px solid var(--color-gray);
 }
 
-.container .navbar-item:nth-child(3) {
+/* .container .navbar-item:nth-child(3) {
   border: none;
+} */
+
+.navbar-item.pos-abs.personal-avatar {
+  width: 230px;
+  height: 230px;
+  border-radius: 999px;
+  border: 10px solid var(--color-white);
 }
 
 /* Job Info Style */
